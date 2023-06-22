@@ -1,0 +1,35 @@
+{
+  "name": "design-dlt-simulation",
+  "version": "0.1.0",
+  "description": "Design showcase and examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "start": "tsc && node dist/index.js",
+    "check": "./node_modules/.bin/prettier --check .",
+    "fmt": "./node_modules/.bin/prettier --write .",
+    "lint": "eslint \"src/**/*.ts\" --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CAGS295/design-dlt-simulation.git"
+  },
+  "author": "carlos gutierrez",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/CAGS295/design-dlt-simulation/issues"
+  },
+  "homepage": "https://github.com/CAGS295/design-dlt-simulation#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^35.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1"
+  }
+}
