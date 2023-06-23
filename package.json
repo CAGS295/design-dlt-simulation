@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "description": "Design showcase and examples",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "vitest",
+    "build": "tsc",
     "start": "tsc && node dist/index.js",
     "check": "./node_modules/.bin/prettier --check .",
     "fmt": "./node_modules/.bin/prettier --write .",
-    "lint": "eslint \"src/**/*.ts\" --ext .ts --fix"
+    "lint": "eslint \"src/**/*.ts\" --ext .ts --fix",
+    "example:actors": "node dist/actors.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +33,7 @@
     "typescript": "*"
   },
   "dependencies": {
+    "@types/node": "^20.3.1",
     "rxjs": "^7.8.1"
   }
 }
