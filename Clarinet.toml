@@ -1,0 +1,25 @@
+[project]
+name = 'pox-clarity-test'
+description = ''
+authors = ['Carlos Gutierrez']
+telemetry = false
+cache_dir = './.cache'
+requirements = []
+
+[contracts.ping-pong]
+path = 'contracts/ping-pong.clar'
+clarity_version = 2
+epoch = 2.1
+
+[contracts.pox-3]
+path = 'contracts/pox-3.clar'
+clarity_version = 2
+epoch = 2.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
